@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    
+
+
+ <!-- <h1 id="idget">hello</h1>
+ <div id="id1">hello</div> -->
+
+
+
+    
+<!-- //         let i=document.getElementById("id1")
+//     i.style.backgroundColor="green"; 
+//   i.style.color="yellow"
+//       var a=document.getElementsById("id2")
+//       a.style.color="blue" -->
+
+<script >
+//(4-oct) 
+
+ //variables
+
+
+//console.log("hii")
+//hii
+
+ //var.........
+
+// var a;
+// console.log(a)
+// //undefined
+
+// var a="hii"
+// var a="hello"  
+// console.log(a)
+// //hello
+
+// var a=10
+// b=11
+// console.log(a,b)
+// //10 11
+
+// var a=10
+// var a=11
+// console.log(a)
+// //11
+
+// var a=5
+//  var b=6
+// console.log(a)
+// console.log(b)
+// //5
+// //6
+
+// var a;
+// var b;
+// console.log(a)
+//undefined
+
+//let..........
+
+// let a=10
+// console.log(a)
+//10
+
+// let a=10
+// let b=11
+// console.log(a+b)
+//21
+
+// let a
+// let b
+// console.log(a+b)
+//NaN
+
+// let a;
+// let b;
+// console.log(a)
+//undefined
+
+//const...........
+// const a=10;
+// console.log(a)
+//10
+
+// var a=null
+// console.log(a)
+//null
+
+//datatypes (primitive(immutable))pass by value
+// 2types..
+// 1).string
+// 2).number
+// 3).boolean
+// 4).undefined
+// 5).null
+
+// 1).Array(noon-primitive(mutable))pass by reference
+// 2).Object
+
+//string...
+
+// var a=("sandy")
+// console.log(a)
+//sandy
+
+//number...
+// var b=15;
+// console.log(b)
+//15
+
+//boolean...
+// let a=(true)
+// console.log(a)
+//true
+
+//undefined...
+//  let a;
+// console.log(a)
+// undefined
+
+//null...
+// let a=null;
+// console.log(a)
+//null
+
+// var a=[1,2,3]
+// var b=a;
+// console.log(b)
+// [1,2,3]
+
+//array...
+// let a=['sandy','karthi','keerthi']
+// console.log(a[1])
+//karthi
+
+// var b=['sandy','karthi','keerthi']
+// b[2]="sandhya"
+// console.log(b)
+//sandhya
+
+//Object...
+// var a={
+//     name:"san",
+//     id:22,
+//     class:"inter"
+
+// }
+// console.log(a.id)
+//22
+
+//typeof....
+
+// let a=1;
+// console.log(typeof(a))
+//number
+
+// var b="sandy"
+// console.log(typeof(b))
+//string
+
+// let a=true
+// console.log(typeof(a))
+//boolean
+
+//(5-oct)........
+
+//console.log("san"  && "sam")
+//sam
+
+//console.log('san' && "karthi")
+//karthi
+
+//console.log("san" || "sam")
+//san
+
+//console.log("1" || 'san')
+//1
+
+//let a=5
+//console.log(a>3 || a<6 ) ;
+//true
+
+// var x=10;
+// console.log(x<3 || x<6 )
+//false
+
+
+
+//terinary operator
+
+// var a=+prompt("enter number")
+// a%2==0 ?alert ("even"):alert("odd");
+//5 odd
+
+// var a=+prompt("enter a")
+// a==12? console.log("hii"): console.log("hello")
+//12 hii
+
+// var a=+prompt("enter a")
+// a!==12? console.log("hii"): console.log("hello")
+//1 hii
+
+//task.....
+
+//1). var a=+prompt("enter")
+// a==("0123456789")?
+// alert("valid"): alert("in-valid")
+//0123456789 valid
+
+//3).var a=+prompt("40,50,60")
+// a==60?alert( "hello"):alert("world")
+//20 world
+//10 world
+//40 world
+//60 hello
+
+  //2).
+  // var a=+prompt("enter a")
+  // var b=+prompt("enter b ")
+  // a>=b?alert ("a>b"): alert("b>a")
+  //a=20, b=50 then b>a..
+  //a=100 , b=50 then a>b..
+
+ //4). var a=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+// console.log(a[1]);
+//sunday 0..
+//monday 1..
+
+
+//5). a=10..we can remove and see then it will be decrement
+// var a=+prompt("enter value");
+// a==10?console.log(++a):console.log(--a);
+// 11 then 12
+// 10 then 11
+// if we remove 10 and take 50 value it will be decrement
+
+//6). var a=prompt("enter a");
+//a=="sandhya"?alert("tekumatla"):alert("invalid")
+//if we take any other name instead of sandhya it will be invalid..
+
+//7). a="30"
+//console.log(typeof(a))
+// var  a=+prompt("enter a")
+//  a===30 ? console.log(a+30):console.log(a-30);
+
+//(6-oct)conditional statements...
+//1).if
+//2). ifelse
+//3).else if
+//4).switch
+
+//1).
+//  if (10<20){
+// console.log("10 is smaller")
+// }
+
+
+//2). if (10>20){
+//   console.log("10 is smaller")
+// }
+// else{
+//   console.log("10 is bigger")
+// }
+//10 is bigger 
+
+// let a=10, b=20;
+// if(a>b){
+//   console.log("a is big")
+// }
+// else{
+//   console.log("b is big")
+// }
+//b is big
+
+//3).let a=10, b=15;
+// if(a>b){
+//   console.log("a is big")
+// }
+// else if(a>b){
+//  console.log("b is small")
+// }
+// else{
+//   console.log("b is big")
+// }
+//b is big
+
+//4).var a=prompt("enter value")
+// switch(6){
+//    case 0:alert("sunday")
+//    break;
+//    case 1:alert("monday")
+//    break;
+//    case 2:alert("tuesday")
+//    break;
+//    case 3:alert("wednesday")
+//    break;
+//    case 4:alert("thursday")
+//    break;
+//    case 5:alert("friday")
+//    break;
+//    case 6:alert("saturday")
+//    break;
+//    default:  alert ("not a day")
+// }
+//saturday
+
+//today's task
+//1).
+// const time=new Date().getHours();
+// let greeting;
+// if(time<10){
+//  console.log("good morning");
+// }
+// else if(time<16){
+//   console.log("good afternoon");
+// }
+// else if(time<20){
+//   console.log("good evening");
+// }
+// else{
+//  console.log("good day");
+// }
+//good afternoon...
+
+//2).
+// let a=10, b=20, c=30;
+// if(a>b){
+//   console.log("a is smaller")
+// }
+// else if(b>c){
+//   console.log("b is smaller")
+// }
+// else{
+//   console.log("c is greater")
+// }
+//c is greater...
+
+//3).
+//  var a=4,b=8;
+//  if(a>b){
+//   console.log("a is smaller")
+//  }
+//  else{
+//   console.log("b is bigger")
+//  }
+ //b is bigger...
+
+//4).  const day=prompt("enter")
+// if (day==0){
+//   console.log(" it's Sunday ")
+// }
+// else if(day==1){
+//   console.log("it's Monday")
+// }
+// else if(day==2){
+//   console.log("it's Tuesday")
+// }
+// else if(day==3){
+//   console.log("it's Wednesday")
+// }
+// else if(day==4){
+//   console.log("it's Thursday")
+// }
+// else if(day==5){
+//   console.log("it's Friday")
+// }
+// else if(day==6){
+//   console.log("it's saturday")
+// }
+// else {
+//   console.log("invalid")
+// }
+//6..then it is saturday...
+
+//5). var a=prompt("enter value")
+// switch(5){
+//   case 1:
+//     alert("January")
+//     break;
+//     case 2:
+//     alert("February")
+//     break;
+//     case 3:
+//     alert("March")
+//     break;
+//     case 4:
+//     alert("April")
+//     break;
+//     case 5:
+//     alert("May")
+//     break;
+//     case 6:
+//     alert("June")
+//     break;
+//     case 7:
+//     alert("July")
+//     break;
+//     case 8:
+//     alert("August")
+//     break;
+//     case 9:
+//     alert("September")
+//     break;
+//     case 10:
+//     alert("October")
+//     break;
+//     case 11:
+//     alert("November")
+//     break;
+//     case 12: 
+//     alert("December")
+//     break;
+//     default:
+//     alert("Not valid check again")
+// }
+//5 then may
+
+
+
+//6).
+// var a=+prompt("enter a value")
+// var b=+prompt("enter b value")
+// var c=prompt("enter  c value")
+// if (c=="+"){
+// alert(a+b)
+// }
+// else if(c=="-"){
+// alert (a-b)
+// }
+// else if( c=="/"){
+// alert (a/b)
+// }
+// else if(c=="*"){
+// alert(a*b)
+// }
+// else if(c=="%"){
+//   alert(a%b)
+// }
+// else{
+//   alert ("not correct")
+// }
+
+//7).
+// var num=+prompt("enter number")
+// if (num===1){
+// console.log("composite");
+// }
+// else if (num>1){
+//   for (i=2; i<=num; i++)
+//   if (num% i==0){
+// console.log("prime");
+//   }
+// else{
+//   console.log("not a prime")
+// }
+// }
+// else{
+//   console.log("invalid");
+// }
+
+//(10-oct)......
+//loops...
+//for loop
+//while loop and 
+//do while loop
+
+//1).Task
+//(for loop)
+// for ( var a=1; a<=10; a++)
+// {
+//  console.log(a);
+// }
+//1....
+//2
+// .
+// .
+// .
+//10.....
+
+//(while loop)
+// var a=0;
+// while(a<=10){
+// console.log(a);
+// a++
+// }
+//0
+//1
+//.
+//.
+//10
+
+
+
+
+
+
+//3).
+// var a="sandhya";
+// for(var b=a.length-1; b>=6; b--){
+// console.log(a[b]);
+// }
+//6->a......
+
+//5).
+// var a="sandhya"
+// for(b=a.length-1; b>=0 ; b--) {
+//   console.log(a[b])
+// }
+//reverse of strings 
+//a...
+//y....
+//h
+//d
+//n
+//a
+//s....
+
+//  for (var a=10; a>=0; a--){
+//   console.log(a);
+//  }
+//reverse numbers
+//10.......
+//9
+//.
+//.
+//.
+//0.......
+
+// 6).var a="sandhya";
+// var b=0
+// for( var i=0; a[i]!==undefined; i++){
+//   b++
+// }
+// console.log(b);
+// length is 7.....
+
+
+//example
+// for (let i = 1; i <= 30; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+//3
+//6
+//.
+//.
+//30.....
+
+
+//2).
+// for(a=3; a<=30; a=+3){
+//   console.log(a)
+// }
+//3
+//6
+//9
+//.
+//.
+//30.........
+
+//4). for (a=0; a<10; a++){
+//   if(a>4 && a<8){
+//     console.log(a)
+//   }
+// }
+//5
+//6
+//7
+
+
+
+// debugger
+// function hello(){
+//   console.log(a);
+//   a=10;
+//   return a
+//   var a;
+
+// }
+// hello()
+//undefined.....
+
+
+// let a='san&\^dh\^ya';
+// console.log(a);
+//san&^dh^ya.....
+
+// let s="sandhya";
+// for (i of s){
+//   console.log(s);
+// }
+//7index.html:600 sandhya.....
+
+// var a="sandhya";
+// console.log(a.match(a));
+
+// ['sandhya', index: 0, input: 'sandhya', groups: undefined]
+// 0
+// : 
+// "sandhya"
+// groups
+// : 
+// undefined
+// index
+// : 
+// 0
+// input
+// : 
+// "sandhya"
+// length
+// : 
+// 1
+// [[Prototype]]
+// : 
+// Array(0)
+
+
+// let a=[[44,65,82,12,34,4],[65,48,23,12,45]]
+// a.map(callback);
+// function callback(val,index,array){
+//   console.log(val,index,array);
+// }
+
+
+// (6) [44, 65, 82, 12, 34, 4] 0 (2) [Array(6), Array(5)]....
+// index.html:631 (5) [65, 48, 23, 12, 45] 1 (2) [Array(6), Array(5)].......
+
+
+// document.body.innerHTML="abcdefghijklmnopqrstuvwxyz";
+
+
+</script>
+
+   
+</body>
+</html>
